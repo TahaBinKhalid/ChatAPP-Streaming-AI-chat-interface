@@ -170,3 +170,22 @@ Considerations:
 - Loading states
 - Mobile responsiveness
 - Dark/Light theme support
+
+
+
+## Tool Contract Specification
+
+### 1. `querySystemMetrics`
+* **Description:** Queries architectural performance benchmarks, network latency, and throughput metrics for distributed and edge-fog topologies.
+* **Schema (Zod Parameters):**
+  - `architecture`: `enum(['monolithic', 'microservices', 'serverless', 'edge-fog'])` — The target system topology.
+  - `metricType`: `enum(['latency', 'throughput', 'fault-tolerance', 'scalability'])` — The specific performance evaluation vector.
+* **Return Shape:**
+  ```json
+  {
+    "architecture": "edge-fog",
+    "metricType": "latency",
+    "score": 96,
+    "details": "Ultra-low latency by processing data close to the source (<5ms).",
+    "timestamp": "2026-08-29T14:30:00.000Z"
+  }
