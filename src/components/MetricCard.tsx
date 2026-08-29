@@ -10,9 +10,9 @@ interface MetricCardProps {
 
 export function MetricCard({ architecture, metricType, score, details, timestamp }: MetricCardProps) {
     const getBadgeColor = (s: number) => {
-        if (s >= 90) return '#10b981' // Green
-        if (s >= 70) return '#f59e0b' // Yellow
-        return '#ef4444' // Red
+        if (s >= 90) return '#10b981'
+        if (s >= 70) return '#f59e0b'
+        return '#ef4444'
     }
 
     return (

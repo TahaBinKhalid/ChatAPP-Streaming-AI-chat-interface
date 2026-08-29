@@ -9,7 +9,6 @@ export const researchTools = {
             metricType: z.enum(['latency', 'throughput', 'fault-tolerance', 'scalability']),
         }),
         execute: async ({ architecture, metricType }) => {
-            // Simulated live backend query or calculation
             const benchmarkData: Record<string, Record<string, { score: number; details: string }>> = {
                 'microservices': {
                     latency: { score: 78, details: 'Higher inter-service network hop overhead (avg 15-25ms).' },
