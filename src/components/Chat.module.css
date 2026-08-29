@@ -1,0 +1,131 @@
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.header {
+    border-bottom: 1px solid #2a2a2a;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: #1F1F1F;
+}
+
+.messagesArea {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 48rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.emptyState {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 5rem;
+}
+
+.emptyStateText {
+    font-size: 1.125rem;
+}
+
+.messageRowUser {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.messageRowAssistant {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.messageBubbleUser {
+    max-width: 85%;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #E50914;
+    color: #ffffff;
+    white-space: pre-wrap;
+}
+
+.messageBubbleAssistant {
+    max-width: 85%;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #1F1F1F;
+    border: 1px solid #333333;
+    color: #e5e7eb;
+    white-space: pre-wrap;
+}
+
+.formContainer {
+    border-top: 1px solid #2a2a2a;
+    background-color: #141414;
+    padding: 1rem;
+}
+
+.formWrapper {
+    max-width: 48rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.inputField {
+    flex: 1;
+    background-color: #1F1F1F;
+    border: 1px solid #333333;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    outline: none;
+    font-size: 0.875rem;
+    transition: border-color 0.2s;
+}
+
+.inputField:focus {
+    border-color: #E50914;
+}
+
+.sendButton {
+    background-color: #E50914;
+    color: #ffffff;
+    padding: 0 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sendButton:hover {
+    background-color: #b80710;
+}
+
+.stopButton {
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 0 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.stopButton:hover {
+    background-color: #b91c1c;
+}
